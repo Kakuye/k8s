@@ -12,3 +12,6 @@ kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.11.0/manif
 
 
 sudo kubeadm init phase certs all --config=kubeadm-config.yaml
+
+
+kubectl label nodes <node-name> node-role.kubernetes.io/worker=worker

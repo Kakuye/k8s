@@ -19,3 +19,6 @@ kubectl label nodes <node-name> node-role.kubernetes.io/worker=worker
 
 
 kubectl taint nodes masternode node-role.kubernetes.io/master:NoSchedule
+
+
+kubectl proxy --address 0.0.0.0 --accept-hosts '.*'
